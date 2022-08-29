@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Player By Name</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <style>
+        /* #spinloader {
+            position: relative;
+            background-image: url(img/circle-loader-gif-2.gif);
+        } */
+    </style>
+</head>
+
+<body class="bg-dark">
+    <header class="container my-2">
+        <h1 class="text-center text-danger fw-bolder">Search Your Favourite Players</h1>
+    </header>
+    <main>
+        <section class="container mt-5">
+            <div class="text-center w-100 mb-3">
+                <input id="player-first" class="px-4 py-2" type="text" placeholder="player first name">
+                <input id="player-last" class="px-4 py-2" type="text" placeholder="player last name">
+                <button class="btn btn-info px-5 py-2 fs-5" onclick="searchPlayer()">Search</button>
+            </div>
+        </section>
+        <section class="container mt-4">
+            <div>
+                <div class="mx-auto w-100">
+                    <img  id="spinloader" src="img/circle-loader-gif-2.gif" class="h-50 w-100 d-none" alt="">
+                </div>
+            </div>
+
+            <div id="player-card" class="card mb-3 mx-auto mt-0 w-100 bg-success text-white">
+                
+            </div>
+
+            <!-- <div id="player-card" class="card mx-auto mt-0 w-50" >
+                
+            </div> -->
+        </section>
+    </main>
+
+
+    <script src="search.js"></script>
+</body>
+</html>
